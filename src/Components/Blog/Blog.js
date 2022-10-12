@@ -5,7 +5,7 @@ import NewBlog from "../NewBlog/NewBlog";
 const Blog = () => {
   const blogs = useLoaderData();
   return (
-    <div className="my-16 grid lg:grid-cols-2">
+    <div className="my-24 grid lg:grid-cols-2">
       {blogs.map((blog) => (
         <NewBlog key={blog.id} blog={blog}></NewBlog>
       ))}

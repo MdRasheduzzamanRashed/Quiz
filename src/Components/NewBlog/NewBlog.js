@@ -1,7 +1,6 @@
 import React from "react";
 
 const NewBlog = ({ blog }) => {
-  console.log(blog);
   const { que, details, picture } = blog;
   return (
     <div className="text-center border-2 m-3 rounded-xl">
@@ -10,9 +9,9 @@ const NewBlog = ({ blog }) => {
           {que}
         </h2>
       </div>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 items-center">
         <p className="text-justify col-span-2 p-4">{details}</p>
-        <img className="rounded-br-xl" src={picture} alt="" />
+        <img className="rounded-xl" src={picture} alt="" />
       </div>
     </div>
   );

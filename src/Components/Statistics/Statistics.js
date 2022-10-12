@@ -6,7 +6,7 @@ const Statistics = () => {
   const data = useLoaderData();
   console.log(data.data);
   return (
-    <div className="flex flex-col justify-center items-center my-16">
+    <div className="flex flex-col justify-center items-center my-24">
       <div className="">
         <BarChart width={400} height={250} data={data.data}>
           <XAxis dataKey="name" />
