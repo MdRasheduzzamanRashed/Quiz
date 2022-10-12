@@ -7,9 +7,9 @@ const QuizQues = () => {
   const { name, questions } = quizQue.data;
 
   return (
-    <div>
+    <div className="my-16">
       <div>
-        <h2 className="text-center text-2xl mt-5 font-medium">
+        <h2 className="text-center text-2xl  font-medium">
           Quiz of {name}
         </h2>
       </div>

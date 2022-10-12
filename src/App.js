@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import NavBar from "./Components/NavBar/NavBar";
 import Statistics from "./Components/Statistics/Statistics";
 import Blog from "./Components/Blog/Blog";
 import Main from "./Main";
@@ -25,6 +24,7 @@ function App() {
         },
         {
           path: "/blog",
+          loader: () => fetch("blog.json"),
           element: <Blog></Blog>,
         },
         {

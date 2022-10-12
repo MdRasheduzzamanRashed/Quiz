@@ -1,0 +1,23 @@
+[
+  {
+    "id": "634641c3ae35f4a16378a208",
+    "index": 0,
+    "picture": "https://reactrouter.com/twitterimage.jpg",
+    "que": "Why use React Router and how it works?",
+    "details": "React Router, and dynamic, client-side routing, allows us to build a single-page web application with navigation without the page refreshing as the user navigates. React Router uses component structure to call components, which display the appropriate information. By preventing a page refresh, and using Router or Link, which is explained in more depth below, the flash of a white screen or blank page is prevented. This is one increasingly common way of having a more seamless user experience. React router also allows the user to utilize browser functionality like the back button and the refresh page while maintaining the correct view of the application.\r\n"
+  },
+  {
+    "id": "634641c3c15fc3093c4abeb3",
+    "index": 1,
+    "picture": "https://dmitripavlutin.com/90649ae4bdf379c482ad24e0dd220bc4/react-context-3.svg",
+    "que": "What is Context API and How it works?",
+    "details": "The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to prop drilling or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux. Context API is a (kind of) new feature added in version 16.3 of React that allows one to share state across the entire app (or part of it) lightly and with ease. React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the store and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state. More information can be found on React's documentation page.\r\n"
+  },
+  {
+    "id": "634641c3c3e8de9ab8e335c3",
+    "index": 2,
+    "picture": "https://miro.medium.com/max/917/0*GxY7_gKf_0wyfwUQ.png",
+    "que": "What is React’s useRef hook?",
+    "details": "useRef is one of the standard hooks provided by React. It will return an object that you can use during the whole lifecycle of the component.The main use case for the useRef hook is to access a DOM child directly. I will show exactly how to do that in another section. Although accessing the DOM is the main use case, it does not mean it is the only one! useRef can also be very useful to hold a mutable value across different renders of your component. \r\n"
+  }
+]

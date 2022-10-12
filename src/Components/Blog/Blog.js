@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import NewBlog from "../NewBlog/NewBlog";
 
 const Blog = () => {
-    return (
-        <div>
-            <h2>This is Blog.</h2>
-        </div>
-    );
+  const blogs = useLoaderData();
+  return (
+    <div className="my-16 grid lg:grid-cols-2">
+      {blogs.map((blog) => (
+        <NewBlog key={blog.id} blog={blog}></NewBlog>
+      ))}
+    </div>
+  );
 };
 
 export default Blog;
