@@ -1,6 +1,5 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
 import QuizQue from "../QuizQue/QuizQue";
 
 const QuizQues = () => {

@@ -1,14 +1,33 @@
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
 import Option from "../Options/Option";
+import "react-toastify/dist/ReactToastify.css";
 
 const QuizQue = ({ que }) => {
   const { question, options, correctAnswer, id } = que;
   const result = (option) => {
     if (option === correctAnswer) {
-      toast("Your answer is correct");
+      toast("Your answer is correct.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     } else {
-      toast("Your answer is incorrect");
+      toast("Your answer is incorrect.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     }
   };
   const showResult = () => {
